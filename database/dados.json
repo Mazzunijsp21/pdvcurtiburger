@@ -1,0 +1,66 @@
+{
+  "produtos": {
+    "Tradicionais": [
+      {
+        "nome": "X-Burger",
+        "desc": "Pão, carne, queijo e maionese",
+        "preco": 15.00
+      },
+      {
+        "nome": "X-Salada",
+        "desc": "Pão, carne, queijo, alface, tomate e maionese",
+        "preco": 18.00
+      }
+    ],
+    "Artesanais": [
+      {
+        "nome": "Curti Bacon",
+        "desc": "Pão brioche, carne artesanal, queijo, bacon e maionese especial",
+        "preco": 25.00
+      },
+      {
+        "nome": "Curti Duplo",
+        "desc": "Pão brioche, 2 carnes, 2 queijos e maionese da casa",
+        "preco": 32.00
+      }
+    ],
+    "Combos": [
+      {
+        "nome": "Combo X-Burger",
+        "desc": "X-Burger + Batata + Refri",
+        "preco": 30.00
+      },
+      {
+        "nome": "Combo Curti Bacon",
+        "desc": "Curti Bacon + Batata + Refri",
+        "preco": 40.00
+      }
+    ],
+    "Porções": [
+      {
+        "nome": "Batata Frita",
+        "desc": "Porção média de batata",
+        "preco": 12.00
+      },
+      {
+        "nome": "Batata Grande",
+        "desc": "Porção grande de batata",
+        "preco": 18.00
+      }
+    ],
+    "Bebidas": [
+      {
+        "nome": "Refrigerante Lata",
+        "desc": "Coca, Guaraná, Fanta ou Pepsi",
+        "preco": 6.00
+      },
+      {
+        "nome": "Água",
+        "desc": "Água sem gás ou com gás",
+        "preco": 4.00
+      }
+    ]
+  },
+  "carrinho": [],
+  "historico": []
+}
