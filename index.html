@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDV Curti Burger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Curti Burger" class="logo">
+        <h1>PDV Curti Burger</h1>
+        <div>
+            <button onclick="toggleAdmin()">Gerenciar Produtos</button>
+            <button onclick="toggleTheme()">Trocar Tema</button>
+            <button onclick="abrirTelaProducao()">Tela de Produção</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="menu"></div>
+
+        <div class="carrinho">
+            <h2>Carrinho</h2>
+            <div id="itens"></div>
+            <p><strong>Total: R$ <span id="total">0.00</span></strong></p>
+
+            <h3>Pagamento</h3>
+            <select id="pagamento" onchange="verificarPagamento()">
+                <option>Dinheiro</option>
+                <option>Pix</option>
+                <option>Cartão de Débito</option>
+                <option>Cartão de Crédito</option>
+            </select>
+
+            <div id="trocoDiv">
+                <label>Troco para quanto?</label>
+                <input type="number" id="troco" placeholder="Ex: 50.00">
+            </div>
+
+            <div id="pixDiv" style="display:none;">
+                <p>Chave Pix: <b>21994796613</b></p>
+            </div>
+
+            <h3>Observações</h3>
+            <textarea id="obs" placeholder="Alguma observação?"></textarea>
+
+            <br><br>
+            <button onclick="imprimirComanda()">Imprimir Comanda</button>
+            <button onclick="enviarWhatsApp()">Enviar WhatsApp</button>
+            <button onclick="finalizarPedido()">Finalizar Pedido</button>
+            <button onclick="limparCarrinho()">Limpar Carrinho</button>
+        </div>
+
+        <div class="admin hidden" id="admin">
+            <h2>Administração</h2>
+
+            <h3>Adicionar Categoria</h3>
+            <input type="text" id="novaCategoria" placeholder="Nome da categoria">
+            <button onclick="adicionarCategoria()">Adicionar Categoria</button>
+
+            <h3>Adicionar Produto</h3>
+            <input type="text" id="nomeProduto" placeholder="Nome">
+            <input type="text" id="descProduto" placeholder="Descrição">
+            <input type="number" id="precoProduto" placeholder="Preço">
+            <select id="categoriaProduto"></select>
+            <button onclick="adicionarProduto()">Adicionar Produto</button>
+
+            <h3>Produtos Cadastrados</h3>
+            <div id="listaProdutos"></div>
+
+            <h3>Histórico de Vendas</h3>
+            <div id="historicoVendas"></div>
+            <button onclick="limparHistorico()">Limpar Histórico</button>
+
+            <h3>Backup</h3>
+            <button onclick="exportarBackup()">Exportar Backup</button>
+            <input type="file" onchange="importarBackup(event)">
+
+            <h3>Reset</h3>
+            <button onclick="resetarSistema()">Resetar Sistema (Restaurar Padrões)</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
