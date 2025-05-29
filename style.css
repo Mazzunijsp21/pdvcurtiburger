@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    margin: 0;
+    color: #000;
+}
+
+body.dark {
+    background: #121212;
+    color: white;
+}
+
+header {
+    background: #ff6600;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header img.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.container {
+    padding: 10px;
+}
+
+.categoria {
+    margin-bottom: 20px;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.produto {
+    background: #f9f9f9;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 220px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+body.dark .produto {
+    background: #1f1f1f;
+}
+
+.produto button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.produto button:hover {
+    background: #e65c00;
+}
+
+.carrinho {
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+body.dark .carrinho {
+    background: #1f1f1f;
+}
+
+button {
+    cursor: pointer;
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #e65c00;
+}
+
+textarea, select, input {
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.admin {
+    background: #ffe5cc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+body.dark .admin {
+    background: #2a2a2a;
+}
+
+.hidden {
+    display: none;
+}
+
+#historicoVendas, #listaProdutos {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.tela-producao {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    color: black;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+body.dark .tela-producao {
+    background: #121212;
+    color: white;
+}
+
+.tela-producao .pedido {
+    border: 2px solid #ff6600;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.tela-producao button {
+    margin-right: 5px;
+}
